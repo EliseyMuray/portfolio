@@ -28,10 +28,11 @@ body {
 nav{
 	margin: auto;
 	width:800px;
-	height:100px;
+	height:65px;
+
 }
 .topnav{
-	background-color:#808080;
+
 	font-size: 14px;
 	margin-top: 40px;
 }
@@ -40,7 +41,7 @@ nav{
 	text-align: center;
 	padding: 14px 16px;
 	font-size: 20px;
-
+	background-color:#808080;
 }
 .topnav a:hover {
 	border-bottom: 2px solid #000000;
@@ -48,6 +49,35 @@ nav{
 .topnav .icon{
 	display: none;
 }
+.background{
+	background-color:#FFFFFF;	
+}
+.mw-100{
+	max-width: 100%;
+	display: block;
+    margin: 0 auto 30px auto;
+
+}
+
+.advantages__container{
+	display: flex;
+	justify-content: center;
+}
+.advantages{
+	padding-top: 40px;
+	padding-bottom: 40px;	
+	margin: 0 auto 0 auto;
+	width: 70%;
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+	flex-wrap: wrap;
+
+}
+.advantages__item{
+	width: 30%;
+}
+
 @media screen and (max-width: 768px) {
 	.topnav a:not(:first-child) {
 		display:none;
@@ -60,7 +90,7 @@ nav{
 	}
 	nav{
 		width: 100%;
-		height: 100px;
+		height: 50px;
 	}
 	.topnav.responsive {
 		position: relative;
@@ -75,4 +105,16 @@ nav{
 		display: block;
 		text-align: left;
 	}
+	.advantages__item{
+	width: 45%;
+    }
+}
+
+@media screen and (max-width: 420px) {
+	.advantages{
+		flex-direction: column;
+	}
+		.advantages__item{
+	width: 100%;
+    }
 }
